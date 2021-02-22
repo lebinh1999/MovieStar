@@ -1,0 +1,51 @@
+/* Desktop first */
+/* Xây dựng web ở màn hình lớn trc. Sau đó canh chỉnh để phù hợp vs màn hình nhỏ hơn  */
+/* CSS3 */
+/* type: screen, print, speech, all */
+/* Cú pháp */
+/* @media screen and (max-width:...){
+    
+} */
+
+h1{
+    background-color: red;
+}
+
+@media screen and (max-width:1200px) {
+    /* vùng ảnh hưởng nhỏ hơn 1200px */
+    h1{
+        background-color: purple;
+    }
+}
+@media screen and (max-width:992px) {
+    h1 {
+        background-color:blue;
+    }
+}
+
+/* Mobile first */
+/* Màn hình nhỏ trc, màn hình lớn sau */
+
+h2 {
+    background-color: aqua;
+}
+
+@media screen and (min-width:768px) {
+    /* vùng ảnh hưởng lớn hơn 768px */
+    h2 {
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width:1200px){
+    /* vùng ảnh hưởng lớn hơn 1200px */
+    h2 {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1000px) {
+    h2{
+        background-color: purple;
+    }
+}
